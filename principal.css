@@ -1,0 +1,44 @@
+.header_principal img {
+    width: 50px;
+  }
+  .header_principal h1 {
+    font-size: 8rem;
+  }
+  .header_principal h2 {
+    font-size: 2.5rem;
+  }
+  
+  .main_principal h2 {
+    font-size: 3rem;
+  }
+  
+  .section__principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .foro--principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 600px;
+    height: 220px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .foro--principal .foro__img {
+    width: 100px;
+  }
