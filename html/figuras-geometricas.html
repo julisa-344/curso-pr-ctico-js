@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <a href="../html/index.html"><img src="../img/logo.svg" alt="logo"></a>
+        <nav class="menu">
+            <ul class=" menu__item">
+                <li><a href="./figuras-geometricas.html">Figuras geométricas</a></li>
+                <li><a href="./promedios_mediana_moda.html">Promedios, mediana y moda</a></li>
+                <li><a href="./porcentajes.html">Descuentos</a></li>
+                <li><a href="./ahorro_endeudamiento.html">Ahorro o endeudamiento</a></li>
+            </ul>
+            <span class="btn__menu">
+                <img class="btn__menu--img"src="../img/menu.svg" alt="menu">
+            </span>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Perímetros y áreas</h1>
+        <section class="figuras">
+            <form action="" class="foro figuras--cuadrado">
+                <div>
+                    <img src="../img/square.svg" alt="cuadrado">
+                    <h2 class="figuras__subtitulo">Cuadrado</h2>
+                </div>
+                <label for="InputCuadrado">
+                    Cuanto mide el lado del cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number">
+                <button class="figuras--button" type="button" onclick="calcularPerimetroSquare()">
+                    Calcular el perímetro
+                </button>
+                <button class="figuras--button"type="button" onclick="calcularAreaSquare()">
+                    Calcular el área
+                </button>
+                <span class="resultado" id="cont1"></span>
+            </form>
+            <form action="" class="foro figuras--triangulo">
+                <div>
+                    <img src="../img/triangle.svg" alt="triangulo">
+                    <h2 class="figuras__subtitulo">Triángulo</h2>
+                </div>
+                <label for="InputTrianguloLadoA">
+                    Lado A:
+                </label><br>
+                <input id="InputTrianguloLadoA" type="number"><br>
+                <label for="InputTrianguloLadoB">
+                    Lado B:
+                </label><br>
+                <input id="InputTrianguloLadoB" type="number"><br>
+                <label for="InputTrianguloBase">
+                    Base:
+                </label><br>
+                <input id="InputTrianguloBase" type="number"><br>
+                <!-- <label for="InputTrianguloAltura">
+                    Altura:
+                </label>
+                <input id="InputTrianguloAltura" type="number"> -->
+                <button class="figuras--button" type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+                <button class="figuras--button" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+                <span class="resultado" id="cont2"></span>
+            </form>
+            <form  class="foro figuras--circulo" action="">
+                <div>
+                    <img src="../img/circle.svg" alt="circulo">
+                    <h2 class="figuras__subtitulo">Círculo</h2>
+                </div>
+                <label for="InputCirculo">
+                    Radio:
+                </label><br>
+                <input id="InputCirculo" type="number"><br>
+                <button class="figuras--button" type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perímetro
+                </button>
+                <button class="figuras--button" type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+                <span class="resultado" id="cont3"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="../img/logo.svg" alt="logo">
+        <p>Creado por  Julisa 06/09/2021</p>
+    </footer>
+    <script src="../js/figuras-geometricas.js"></script>
+</body>
+</html>

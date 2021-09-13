@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Capacidad de ahorro o endeudamiento</title>
+</head>
+<body>
+    <header>
+        <a href="../html/index.html"><img src="../img/logo.svg" alt="logo"></a>
+        <nav class="menu">
+            <ul class=" menu__item">
+                <li><a href="./figuras-geometricas.html">Figuras geométricas</a></li>
+                <li><a href="./promedios_mediana_moda.html">Promedios, mediana y moda</a></li>
+                <li><a href="./porcentajes.html">Descuentos</a></li>
+                <li><a href="./ahorro_endeudamiento.html">Ahorro o endeudamiento</a></li>
+            </ul>
+            <span class="btn__menu">
+                <img class="btn__menu--img"src="../img/menu.svg" alt="menu">
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section class="figuras">
+            <h1 class="titulo">Capacidad de ahorro y endeudamiento</h1>
+            <form action="" class="foro">
+                    <h2 class="figuras__subtitulo">Ingresos</h2>
+
+                    <label for="ingresos">Ingresos fijos</label>
+                    <input id="ingresos" type="number">
+                    <label for="ingresosOtros">Otros ingresos fijos</label>
+                    <input id="ingresosOtros" type="number">
+            </form>
+            <form action="" class="foro">
+                    <h2 class="figuras__titulo">Gastos</h2>
+
+
+                    <h2 class="figuras__subtitulo--margin">Gastos Fijos</h2>
+
+                    <label for="serviciosbasicos">Servicios básicos</label>
+                    <input id="serviciosbasicos" type="number">
+                    <label for="alementacion">Alimentación</label>
+                    <input id="alementacion" type="number">
+                    <label for="mobilidad">Mobilidad</label>
+                    <input id="mobilidad" type="number">
+                    <label for="casa">Casa/departamento</label>
+                    <input id="casa" type="number">
+                    <label for="deudas">Deudas Previas</label>
+                    <input id="deudas" type="number">
+
+                    <h2 class="figuras__subtitulo--margin">Gastos variables</h2>
+                    
+                    <label for="gastosOtros">Otros gastos</label>
+                    <input id="gastosOtros" type="number">
+                    <button class="figuras--button" type="button" onclick="calcularAhorroEndeudamiento_btn()">
+                        Calcular
+                    </button>
+                    <span class="resultado" id="ahorroDeuda"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="../img/logo.svg" alt="logo">
+        <p>Creado por  Julisa 06/09/2021</p>
+    </footer>
+    <script src="../js/ahorro_endeudamiento.js"></script>
+</body>
+</html>

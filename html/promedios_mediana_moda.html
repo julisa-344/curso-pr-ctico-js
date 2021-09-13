@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Promedios,medianas y moda</title>
+</head>
+<body>
+    <header>
+        <a href="../html/index.html"><img src="../img/logo.svg" alt="logo"></a>
+        <nav class="menu">
+            <ul class=" menu__item">
+                <li><a href="./figuras-geometricas.html">Figuras geométricas</a></li>
+                <li><a href="./promedios_mediana_moda.html">Promedios, mediana y moda</a></li>
+                <li><a href="./porcentajes.html">Descuentos</a></li>
+                <li><a href="./ahorro_endeudamiento.html">Ahorro o endeudamiento</a></li>
+            </ul>
+            <span class="btn__menu">
+                <img class="btn__menu--img"src="../img/menu.svg" alt="menu">
+            </span>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Promedios, mediana y moda</h1>
+        <section class="figuras">
+            <form action="" class="foro">
+                <h2 class="figuras__titulo">Promedios</h2>
+                <h2 class="figuras__subtitulo--margin">Media aritmética</h2>
+                <label for="media_aritmetica">Escriba los números</label>
+                <input id="media_aritmetica">
+                <button class="figuras--button" type="button" onclick="calcularMediaAritmetica_btn()">
+                    Calcular
+                </button>
+                <span class="resultado" id="mediaA"></span>
+                <h2 class="figuras__subtitulo--margin">Media geométrica</h2>
+                <label for="media_geometrica">Escriba los números</label>
+                <input id="media_geometrica">
+                <button class="figuras--button" type="button" onclick="calcularMediaGeometrica_btn()">
+                    Calcular
+                </button>
+                <span class="resultado" id="mediaG"></span>
+                <h2 class="figuras__subtitulo--margin">Media armónica</h2>
+                <label for="media_armonica">Escriba los números</label>
+                <input id="media_armonica" >
+                <button class="figuras--button" type="button" onclick="calcularMediaArmonica_btn()">
+                    Calcular
+                </button>
+                <span class="resultado" id="mediaAr"></span>
+            </form>
+        
+            <form action="" class="foro">
+                <h2 class="figuras__subtitulo--margin">Mediana</h2>
+                <label for="mediana">Escriba los números</label>
+                <input id="mediana">
+                <button class="figuras--button" type="button" onclick="calcularMediana_btn()">
+                    Calcular
+                </button>
+                <span class="resultado" id="mediana_btn"></span>
+            </form>
+            
+            <form action="" class="foro">
+                <h2 class="figuras__subtitulo--margin">Moda</h2>
+                <label for="moda">Escriba los números</label>
+                <input id="moda">
+                <button class="figuras--button" type="button" onclick="calcularModa_btn()">
+                    Calcular
+                </button>
+                <span class="resultado" id="moda--btn"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="../img/logo.svg" alt="logo">
+        <p>Creado por  Julisa 12/09/2021</p>
+    </footer>
+    <script src="../js/promedios_mediana_moda/promedio.js"></script>
+    <script src="../js/promedios_mediana_moda/geometrico.js"></script>
+    <script src="../js/promedios_mediana_moda/mediana.js"></script>
+    <script src="../js/promedios_mediana_moda/moda.js"></script>
+</body>
+</html>

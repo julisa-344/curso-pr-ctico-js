@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Porcentajes y descuentost</title>
+</head>
+<body>
+    <header>
+        <a href="../html/index.html"><img src="../img/logo.svg" alt="logo"></a>
+        <nav class="menu">
+            <ul class=" menu__item">
+                <li><a href="./figuras-geometricas.html">Figuras geométricas</a></li>
+                <li><a href="./promedios_mediana_moda.html">Promedios, mediana y moda</a></li>
+                <li><a href="./porcentajes.html">Descuentos</a></li>
+                <li><a href="./ahorro_endeudamiento.html">Ahorro o endeudamiento</a></li>
+            </ul>
+            <span class="btn__menu">
+                <img class="btn__menu--img"src="../img/menu.svg" alt="menu">
+            </span>
+        </nav>
+    </header>
+    <body>
+        <h1 class="titulo">Porcentajes y descuentos</h1>
+        <form action="" class="foro">
+            <picture class="imagen-conten">
+                <img class="cart" src="../img/shopping-cart.svg" alt="">
+            </picture>
+            <h2 class="info">Te ayudamos a calcular el decuento de tus pruductos</h2>
+            <label for="inputPrice">Precio de su producto</label>
+            <input class="inputP" id="inputPrice" type="number">
+            <span class="signo">$</span><br>
+            <!-- <label for="inputDescuento">Descuento</label><br>
+            <input class="inputP" id="inputDescuento" type="number">
+            <span class="signo">%</span><br> -->
+            <label for="inputCupon">Tengo un cupon de descuento</label>
+            <picture onclick="mostrar()" class="signodown" >
+                <img src="../img/down.svg" alt="flecha">
+            </picture><br>
+            <div id="contentCupon">
+                <input class="inputP" id="inputCupon">
+            </div>
+            <button type="button" onclick="onClickButtonPriceCupon()">Calcular</button> 
+            <span class="resultado" id="calculado"></span>
+        </form>
+    </body>
+    <footer>
+        <img src="../img/logo.svg" alt="logo">
+        <p>Creado por  Julisa 07/09/2021</p>
+    </footer>
+    <script src="../js/porcentajes.js"></script>
+</body>
+</html>
